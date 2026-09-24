@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sonora - Where Sound Comes Alive</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+body { background: #0f0f0f; color: #fff; }
+
+header {
+  background: #0f0f0f; 
+  padding: 18px 40px; 
+  display: flex; justify-content: space-between; align-items: center;
+  position: sticky; top: 0; z-index: 100;
+  border-bottom: 1px solid #222;
+}
+header h1 { font-size: 24px; font-weight: 700; color: #fff; letter-spacing: 1px; }
+header h1 span { color: #1DB954; }
+nav a { color: #bbb; text-decoration: none; margin-left: 25px; font-size: 14px; transition: 0.3s; }
+nav a:hover { color: #fff; }
+nav a.active { color: #fff; font-weight: 600; }
+
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.85)), url('https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=1350&q=80');
+  background-size: cover; background-position: center;
+  height: 75vh; display: flex; flex-direction: column;
+  justify-content: center; align-items: center; text-align: center;
+}
+.hero h2 { font-size: 72px; font-weight: 700; letter-spacing: -2px; }
+.hero h2 span { color: #1DB954; }
+.hero p { font-size: 18px; color: #ccc; margin: 10px 0 25px; }
+.hero button {
+  background: #1DB954; color: black; border: none; padding: 14px 38px;
+  font-size: 15px; font-weight: 700; border-radius: 30px; cursor: pointer; transition: 0.3s;
+}
+.hero button:hover { background: #fff; transform: scale(1.05); }
+
+.section { padding: 70px 40px; background: #121212; text-align: center; }
+.section h3 { font-size: 28px; margin-bottom: 40px; text-align: left; }
+.cards { display: flex; justify-content: center; gap: 25px; flex-wrap: wrap; }
+.card {
+  background: #1a1a1a; width: 320px; padding: 25px; border-radius: 12px;
+  text-align: left; transition: 0.3s; cursor: pointer; border: 1px solid #222;
+}
+.card:hover { background: #282828; transform: translateY(-5px); }
+.card h4 { color: #fff; margin: 15px 0 8px; font-size: 17px; }
+.card p { font-size: 13px; color: #aaa; line-height: 1.5; }
+.card .icon { background: #1DB954; width: 45px; height: 45px; display: flex; align-items: center; justify-content: center; border-radius: 50%; font-size: 20px; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Sono<span>ra</span></h1>
+  <nav>
+    <a href="index.html" class="active">Home</a>
+    <a href="genre.html">Genres</a>
+    <a href="instrument.html">Instruments</a>
+    <a href="service.html">Contact</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <h2>Where Sound<br><span>Comes Alive</span></h2>
+  <p>Explore instruments, genres and artists from around the world</p>
+  <button>Explore Music</button>
+</div>
+
+<div class="section">
+  <h3>Discover Music</h3>
+  <div class="cards">
+    <div class="card">
+      <div class="icon">🎸</div>
+      <h4>Instruments</h4>
+      <p>Learn about strings, wind, brass, and percussion that power every song.</p>
+    </div>
+    <div class="card">
+      <div class="icon">🎧</div>
+      <h4>Genres</h4>
+      <p>From Classical to Afrobeats, Amapiano and Trap. Find your sound.</p>
+    </div>
+    <div class="card">
+      <div class="icon">🎤</div>
+      <h4>Artists</h4>
+      <p>Meet the voices that shape the sound of today and tomorrow.</p>
+    </div>
+  </div>
+</div>
+<center>
+    <footer style="font-size: 40px;text-emphasis: inherit;">feel the resonance</footer>
+</center>
+</body>
+</html>

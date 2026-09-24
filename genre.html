@@ -1,0 +1,33 @@
+
+<html>
+<head>
+<title>Sonora - Beat Genres</title>
+<style>
+body{background:#0a0a0a; color:white; font-family:sans-serif; padding:20px}
+h1{color:#a855f7}
+.categories{display:grid; grid-template-columns:1fr 1fr; gap:15px}
+.cat{background:#1a1a1a; padding:30px; border-radius:15px; text-align:center; cursor:pointer; border:1px solid #333}
+.cat:hover{border-color:#a855f7}
+</style>
+</head>
+<body>
+<h1>Beat Genres</h1>
+<div class="categories">
+<div class="cat" onclick="openInPhoenix('afrobeat type beat')"><h2>🔥</h2>Afrobeat</div>
+<div class="cat" onclick="openInPhoenix('amapiano type beat')"><h2>🎹</h2>Amapiano</div>
+<div class="cat" onclick="openInPhoenix('drill type beat')"><h2>💀</h2>Drill</div>
+<div class="cat" onclick="openInPhoenix('trap type beat')"><h2>💰</h2>Trap</div>
+<div class="cat" onclick="openInPhoenix('highlife type beat')"><h2>🌴</h2>Highlife</div>
+<div class="cat" onclick="openInPhoenix('dancehall type beat')"><h2>💃</h2>Dancehall</div>
+</div>
+
+<script>
+function openInPhoenix(query){
+  // This go open YouTube search for that beat inside Phoenix Browser
+  let youtubeLink = "https://www.youtube.com/results?search_query=" + encodeURIComponent(query);
+  
+  window.open(youtubeLink, "_blank");
+}
+</script>
+</body>
+</html>
